@@ -6,3 +6,4 @@ Este diretório contém projetos focados em design responsivo.
 *   [Formulário de Pesquisa](./survey-form/)
 *   [Documentação Técnica](./technical-documentation/)
 *   [Página de Tributo](./tribute-page/)
+*   [Portfólio](./portfolio-vanilla/)

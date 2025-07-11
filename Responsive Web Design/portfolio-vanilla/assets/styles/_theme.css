@@ -1,0 +1,18 @@
+.dark {
+  background: var(--dark-theme-background);
+}
+
+.dark .l-header {
+  background-color: var(--dark-theme-background);
+}
+
+.dark .l-header a,
+.dark .nav__link {
+  color: var(--first-color);
+}
+
+.dark .home__social-icon,
+.dark .footer__icon,
+.dark {
+  color: var(--dark-theme-color);
+}

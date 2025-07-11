@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio profissional de Adriano, desenvolvedor Front-End especializado em tecnologias modernas como Angular, React e mais."
+    />
+    <meta
+      name="keywords"
+      content="Desenvolvedor Front-End, Angular, React, HTML, CSS, JavaScript, Portfólio"
+    />
+    <meta name="author" content="Adriano P. de Araujo" />
+
+    <meta
+      property="og:title"
+      content="Portfólio de Adriano - Desenvolvedor Front-End"
+    />
+    <meta
+      property="og:description"
+      content="Confira os projetos e habilidades do Adriano, especialista em desenvolvimento Front-End."
+    />
+    <meta property="og:image" content="assets/images/perfil.png" />
+    <meta property="og:url" content="https://dev-araujo.com.br/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Portfólio de Adriano - Desenvolvedor Front-End"
+    />
+    <meta
+      name="twitter:description"
+      content="Conheça mais sobre Adriano e seus projetos de alto impacto."
+    />
+    <meta name="twitter:image" content="assets/images/perfil.png" />
+
+    <link rel="icon" type="image/png" href="./assets/images/iconabout.ico" />
+
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Araujo</title>
+  </head>
+
+  <body>
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a href="#" class="nav__logo">Adriano</a>
+          <span id="iconTheme">
+            <i id="icon-theme" class="bx bx-sun" onclick="changeTheme()"></i>
+          </span>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#inicio" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#sobre" class="nav__link">Sobre</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experiencias" class="nav__link">Experiências</a>
+            </li>
+            <li class="nav__item">
+              <a href="#hard-skills" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projetos" class="nav__link">Projetos</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <section class="home" id="inicio">
+        <div class="text-content">
+          <h1 class="home__title">
+            Olá,<br />Sou <span class="home__title-color">Adriano</span><br />
+            Dev. <u class="home__underline-color">Front-end</u>
+          </h1>
+          <h5 class="home__subtitle">
+            <i
+              >Com experiência em desenvolvimento
+              <strong class="home__underline-color">web</strong> e
+              <strong class="home__underline-color">web3</strong></i
+            >
+          </h5>
+          <a
+            href="./assets/curriculo/curriculo-adriano.docx"
+            download="curriculo-adriano.docx"
+            class="button"
+            >Currículo</a
+          >
+          <div class="social-icons">
+            <a
+              title="Linkedin"
+              href="https://www.linkedin.com/in/araujocode/"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              title="hackerrank"
+              href="https://www.hackerrank.com/araujo6_6"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bx-terminal"></i
+            ></a>
+            <a
+              title="github"
+              href="https://github.com/dev-araujo"
+              target="_blank"
+              class="home__social-icon"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="image-content">
+          <img
+            class="home__img--border"
+            src="assets/images/perfil.png"
+            alt="foto de perfil"
+          />
+        </div>
+      </section>
+
+      <section class="about section" id="sobre">
+        <h2 class="section-title">Sobre</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <img src="assets/images/sobre.jpeg" alt="Foto sobre" />
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">Olá nome é Adriano</h2>
+            <p class="about__text">
+              E sou desenvolvedor Front-End e minha expertise abrange um
+              conjunto sólido de tecnologias, incluindo
+              <strong>HTML</strong>, <strong>CSS</strong>,
+              <strong>Sass</strong>, <strong>Bootstrap</strong>,
+              <strong>JavaScript</strong>, <strong>TypeScript</strong>,
+              <strong>Angular 2+</strong> e <strong>Testes Unitários</strong>.
+              Tenho um domínio em <strong>Angular</strong> e experiência com
+              <strong>React</strong>, além de conhecimentos em
+              <strong>Docker</strong>, <strong>Python</strong>,
+              <strong>Node.js</strong> e <strong>Go</strong>, que me permitem
+              transitar por diferentes stacks e contribuir em projetos
+              desafiadores.
+            </p>
+            <p class="about__text">
+              🎯 Ao longo de minha carreira, trabalhei em projetos de grande
+              escala para empresas renomadas como <strong>Gerdau</strong>,
+              <strong>Aliança Energia</strong> e <strong>Vli</strong>, onde
+              aprimorei minhas habilidades em
+              <strong>desenvolvimento ágil (Scrum)</strong> e
+              <strong>colaboração</strong> em equipe, utilizando ferramentas
+              como <strong>Azure DevOps</strong>, <strong>Trello</strong> e
+              <strong>Jira</strong>. Sou proficiente em plataformas de
+              versionamento como <strong>GitHub</strong>,
+              <strong>BitBucket</strong> e <strong>GitLab</strong>, garantindo a
+              organização e a qualidade do código.
+            </p>
+            <p class="about__text">
+              🌐 Além do meu trabalho como desenvolvedor, sou um membro ativo em
+              comunidades <strong>web3/blockchain</strong>, dedicando meu tempo
+              à tradução e revisão de conteúdos sobre <strong>web3</strong> e
+              tecnologias <strong>blockchain</strong>. Acredito no poder da
+              colaboração e do compartilhamento de conhecimento para impulsionar
+              a inovação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="section-title" id="experiencias">Experiências</h2>
+        <section class="section">
+          <section id="s-experience">
+            <div class="grid-layout">
+              <div class="container">
+                <aside class="sidebar">
+                  <ul>
+                    <li>Enacom</li>
+                    <li>WEB3DEV</li>
+                    <li>Paytime Brasil</li>
+                  </ul>
+                </aside>
+                <div class="content">
+                  <div class="experience-header">
+                    <h1 class="about__subtitle">
+                      Desenvolvedor Front-end - Pleno
+                    </h1>
+                    <p>Abr 2022 - Dez 2024 (2 anos e 9 meses)</p>
+                  </div>
+                  <div class="info">
+                    <h2>Enacom</h2>
+                    <p>
+                      Desenvolvi aplicações web com Angular, criando e
+                      implementando testes unitários para garantir a qualidade
+                      do código. Resolvi bugs e problemas técnicos, trabalhei em
+                      equipes multidisciplinares com metodologias ágeis e
+                      colaborei com outros desenvolvedores, promovendo boas
+                      práticas e melhorias de processos.
+                    </p>
+                    <section class="tecnologies">
+                      <p class="tag">Angular</p>
+                      <p class="tag">Material Angular</p>
+                      <p class="tag">TypeScript</p>
+                      <p class="tag">JavaScript</p>
+                      <p class="tag">Chart.js</p>
+                      <p class="tag">GitLab</p>
+                      <p class="tag">Sonarqube</p>
+                      <p class="tag">API Rest</p>
+                      <p class="tag">Azure</p>
+                      <p class="tag">Bootstrap</p>
+                      <p class="tag">SCSS</p>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <section class="skills section" id="hard-skills">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skills__container bd-grid">
+          <div class="skills__blocks">
+            <p class="skills__text">
+              Seguem algumas hard skills que domino e tenho utilizado. Para
+              saber mais sobre o que venho estudando, você pode
+              <a href="https://github.com/dev-araujo" target="_blank"
+                ><u
+                  style="text-decoration-thickness: 2px"
+                  class="skills__spotlight"
+                  >descobrir aqui</u
+                ></a
+              >
+            </p>
+
+            <div class="skills__section">
+              <div class="skills__data">
+                <div class="skills__names">
+                  <i class="bx bxl-angular skills__icon"></i
+                  ><span class="skills__name">ANGULAR +2</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bx-test-tube skills__icon"></i
+                  ><span class="skills__name">TESTES UNITÁRIOS</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-typescript skills__icon"></i
+                  ><span class="skills__name">TYPESCRIPT</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-javascript skills__icon"></i
+                  ><span class="skills__name">JAVASCRIPT</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-react skills__icon"></i
+                  ><span class="skills__name">REACT</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-nodejs skills__icon"></i
+                  ><span class="skills__name">NODE.JS</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-python skills__icon"></i
+                  ><span class="skills__name">PYTHON</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-bootstrap skills__icon"></i
+                  ><span class="skills__name">BOOTSTRAP</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-docker skills__icon"></i
+                  ><span class="skills__name">DOCKER</span>
+                </div>
+                <div class="skills__names">
+                  <i class="bx bxl-git skills__icon"></i
+                  ><span class="skills__name">GIT</span>
+                </div>
+                <div class="skills__names">
+                  <img
+                    src="./assets/images/solidity.svg"
+                    class="skills__icon--sol"
+                  /><span class="skills__name">SOLIDITY</span>
+                </div>
+              </div>
+
+              <div class="box-img">
+                <img
+                  src="assets/images/work3.jpg"
+                  alt="Imagem habilidades"
+                  class="skills__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projetos">
+        <h2 class="section-title">Projetos</h2>
+        <section class="articles">
+          <article class="project">
+            <div class="article-wrapper">
+              <a href="https://crypto-angular.vercel.app/" target="_blank">
+                <figure>
+                  <img
+                    src="./assets/images/projects/crypto-angular.png"
+                    alt=""
+                  />
+                </figure>
+              </a>
+
+              <div class="article-body">
+                <h2 type="button">Cripto Angular</h2>
+                <p>
+                  Um projeto em <strong>angular 17</strong> e
+                  <strong>PrimeNG</strong> para listar e visualizar dados e
+                  cotações sobre crypto. Autenticação com metamask e
+                  possibilidade de favoritar tokens.
+                </p>
+
+                <section class="project-links">
+                  <a target="_blank" href="https://crypto-angular.vercel.app/">
+                    <button type="button" class="btn btn-primary">
+                      Ver projeto
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/dev-araujo/crypto-angular"
+                  >
+                    <button type="button" class="btn btn-light">
+                      Ver Código <i class="ms-2 bx bxl-github"></i>
+                    </button>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="article-wrapper">
+              <a
+                href="https://github.com/dev-araujo/habit-tracker"
+                target="_blank"
+              >
+                <figure>
+                  <img
+                    src="./assets/images/projects/minimal-tracker.png"
+                    alt=""
+                  />
+                </figure>
+              </a>
+              <div class="article-body">
+                <h2 type="button">Habit-tracker</h2>
+                <p>
+                  Um projeto <strong>fullstack</strong> de habit tracker
+                  minimalista para uso pessoal com <strong>angular</strong>,
+                  <strong>Node.js</strong>,<strong>SQLite</strong> e
+                  <strong>Docker-compose</strong> 🐙.
+                </p>
+
+                <section class="project-links">
+                  <a
+                    target="_blank"
+                    href="https://github.com/dev-araujo/habit-tracker"
+                  >
+                    <button type="button" class="btn btn-light">
+                      Ver Código <i class="ms-2 bx bxl-github"></i>
+                    </button>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <div class="article-wrapper">
+              <a href="https://post-wall-iota.vercel.app/" target="_blank">
+                <figure>
+                  <img src="./assets/images/projects/post-wall.png" alt="" />
+                </figure>
+              </a>
+              <div class="article-body">
+                <h2 type="button">Post wall web3</h2>
+                <p>
+                  Um mural de opniões descentralizado feito com
+                  <strong>React</strong>, <strong>TypeScript</strong>,
+                  <strong>Solidity</strong> e <strong>Foundry</strong>.
+                </p>
+
+                <section class="project-links">
+                  <a target="_blank" href="https://post-wall-iota.vercel.app/">
+                    <button type="button" class="btn btn-primary">
+                      Ver projeto
+                    </button>
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/dev-araujo/post-wall-web3"
+                  >
+                    <button type="button" class="btn btn-light">
+                      Ver Código <i class="ms-2 bx bxl-github"></i>
+                    </button>
+                  </a>
+                </section>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="d-flex justify-content-center">
+          <a href="https://github.com/dev-araujo" target="_blank" class="button"
+            >Ver GitHub<i class="ms-2 bx bxl-github"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script type="module" src="assets/js/main.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

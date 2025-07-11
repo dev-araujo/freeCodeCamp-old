@@ -1,0 +1,188 @@
+@media (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-block: 4rem 3rem;
+  }
+
+  .section-title {
+    margin-bottom: var(--mb-6);
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__list {
+    display: flex;
+    padding-top: 0;
+  }
+
+  .nav__item {
+    margin-left: var(--mb-6);
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+  .home {
+    height: 100vh;
+  }
+
+  .home__data {
+    align-self: flex-end;
+  }
+
+  .home__social {
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 17.5rem;
+    padding-top: 0;
+    flex-direction: row;
+    align-self: flex-end;
+  }
+
+  .home__social-icon {
+    margin-right: var(--mb-4);
+    margin-bottom: 0;
+  }
+
+  .home__img {
+    width: 457px;
+    bottom: 15%;
+  }
+
+  .about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+  }
+
+  .about__img img {
+    width: 300px;
+  }
+
+  .contact__form {
+    width: 360px;
+  }
+
+  .contact__container {
+    justify-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .bd-grid {
+    margin: auto;
+  }
+
+  .home__img {
+    right: 20%;
+    top: 23%;
+  }
+}
+
+@media (max-height: 630px) {
+  #button-contact {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .text-content {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .image-content {
+    display:none;
+  }
+}
+
+
+@media (max-width: 482px) {
+  .home__title {
+    font-size: 48px;
+  }
+
+  .home__img {
+    width: 280px;
+    right: 43px;
+    bottom: 280px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .box-img {
+    display: none;
+  }
+
+  .skills__section,
+  .skills__data {
+    justify-content: center;
+  }
+
+  .skills__names {
+    width: 100vw;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .experience-header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .home__img {
+    width: 280px;
+    bottom: 215px;
+  }
+}
+
+@media (max-width: 420px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .skills__data {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home__img {
+    width: 280px;
+    right: 0;
+    bottom: 155px;
+  }
+}
+
+@container card (min-width: 380px) {
+  .article-wrapper {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+  }
+
+  figure {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  figure img {
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+}
