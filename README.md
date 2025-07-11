@@ -1,6 +1,6 @@
 # Estudos freeCodeCamp
 
-Este repositório contém uma coleção de projetos e estudos da plataforma **[freeCodeCamp](https://www.freecodecamp.org/learn)**.
+Repositório com antigos estudos e projetos utilizando a plataforma **[freeCodeCamp](https://www.freecodecamp.org/learn)** ❤️
 
 ## Índice
 
