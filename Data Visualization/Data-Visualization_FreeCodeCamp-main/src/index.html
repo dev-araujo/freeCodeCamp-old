@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <title>Chart Menu</title>
+</head>
+
+<body>
+    <main>
+        <header id="menu">
+            <select id="chart-type">
+                <option value="bar">Bar Chart</option>
+                <option value="scatter">Scatter Plot</option>
+            </select>
+        </header>
+
+        <section>
+            <div class="chart" id="bar-chart"></div>
+            <div class="chart" id="scatter-plot"></div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="./js/charts.js"></script>
+    <script src="./js/menu.js"></script>
+    <script>
+        // Obtém os elementos SVG dos gráficos
+        const svgBarChart = d3.select("#bar-chart").append("svg").attr("width", 500).attr("height", 320);
+        const svgScatterPlot = d3.select("#scatter-plot").append("svg").attr("width", 500).attr("height", 500);
+
+        // Dados para os gráficos
+        const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9]; // barras
+        const datasetPlot = [ //plot
+            [34, 78],
+            [109, 280],
+            [310, 120],
+            [79, 411],
+            [420, 220],
+            [233, 145],
+            [333, 96],
+            [222, 333],
+            [78, 320],
+            [21, 123]
+        ];
+
+        // Chama as funções para criar os gráficos
+        createBarChart(svgBarChart, dataset);
+        createScatterPlot(svgScatterPlot, datasetPlot);
+    </script>
+</body>
+
+</html>

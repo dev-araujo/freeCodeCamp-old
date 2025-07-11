@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --color-white: rgb(255, 255, 255);
+  --color-blue: rgb(70, 103, 134);
+  --color-red: rgba(218, 58, 58, 0.74);
+  --color-red-dark: rgba(243, 75, 75, 0.993);
+  --color-background: rgba(82, 196, 82, 0.705);
+  --color-green: rgba(32, 192, 32, 0.705);
+  --color-green-dark: rgb(35, 182, 101);
+  --color-shadow: rgba(0, 0, 0, 0.514);
+  --color-black: rgba(0, 0, 0, 0.849);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: var(--color-background);
+  height: 100%;
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 3rem;
+  box-shadow: 10px 20px 20px 12px var(--color-shadow);
+  border-radius: 14px;
+}
+
+.card > header > h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.bar-red {
+  fill: var(--color-red);
+}
+.bar-green {
+  fill: var(--color-green);
+}
+.bar.bar-red:hover {
+  fill: var(--color-red-dark);
+}
+
+.bar.bar-green:hover {
+  fill: var(--color-green-dark);
+}
+
+#tooltip {
+  position: absolute;
+  padding: 0.5rem;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: var(--color-blue);
+}
+
+#tooltip > hr {
+  margin: 2px 0 4px 0;
+}
+#tooltip > p {
+  margin-top: 8px;
+}
+
+.card > .info {
+  text-align: right;
+  font-size: 0.8rem;
+}

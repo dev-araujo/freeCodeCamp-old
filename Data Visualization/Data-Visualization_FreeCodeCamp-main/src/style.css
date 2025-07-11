@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.chart {
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+  display: none;
+}
+
+.bar:hover {
+  fill: rgba(6, 175, 119, 0.952);
+}
+.bar-low:hover {
+  fill: rgba(179, 23, 23, 0.808);
+}
+
+#menu {
+  padding: 32px;
+}
+
+select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
