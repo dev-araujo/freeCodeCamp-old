@@ -2,7 +2,7 @@
 
 ## 🎨 Resultado
 
-- O resultado pode ser conferido aqui: [**Repl.it**](https://product-landing-page.dev-araujo.repl.co/)
+- O resultado pode ser conferido aqui: [**Vercel**](https://landing-page-psi-weld.vercel.app/)
 
 ![nft](https://user-images.githubusercontent.com/97068163/159713948-89f0494c-4736-47c3-b63e-1de60eac06ca.png)
 
