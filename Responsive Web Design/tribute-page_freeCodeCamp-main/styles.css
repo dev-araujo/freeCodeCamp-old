@@ -1,0 +1,103 @@
+:root {
+  --font-title: "Roboto", sans-serif;
+  --font-text: "Lato", sans-serif;
+  --font-special: "Cormorant Garamond", serif;
+
+  --color-scrollbar: #f4f4f4;
+  --color-scrollbar-thumb: #dad7d7;
+
+  --color-title: rgba(34, 34, 34, 0.918);
+}
+
+* {
+  font-family: var(--font-title);
+  color: var(--color-title);
+
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-scrollbar);
+}
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--color-scrollbar);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+}
+
+.tribute {
+  width: 98vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+.tribute__figure {
+  width: 30vw;
+}
+.tribute__figure {
+  background: url(./assets/hermann-hesse.jpg);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin-right: -0.9rem;
+}
+@media (max-width: 420px) {
+  .tribute__figure {
+    display: none;
+  }
+}
+.tribute__description {
+  width: 70vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: auto;
+}
+@media (max-width: 420px) {
+  .tribute__description {
+    width: 100%;
+  }
+}
+
+.tribute__title {
+  font-size: 3.3rem;
+}
+.tribute__subtitle,
+.tribute__footer a {
+  font-family: var(--font-special);
+
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.7rem;
+  text-align: end;
+  letter-spacing: 2px;
+}
+
+.tribute__info {
+  margin-top: 2rem;
+  width: 30vw;
+  line-height: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 420px) {
+  .tribute__info {
+    width: 80%;
+  }
+}
+
+.tribute__info p {
+  font-family: var(--font-text);
+  font-size: 1.3rem;
+}
+.tribute__footer {
+  padding: 2rem;
+}

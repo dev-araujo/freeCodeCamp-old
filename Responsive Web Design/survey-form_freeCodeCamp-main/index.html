@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Display:ital@1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <title>FreeCodeCamp Test</title>
+  </head>
+
+  <body>
+    <main>
+      <section class="left">
+        <header class="left__header">
+          <p>Building A <strong>New</strong></p>
+          <h1 id="title">CARRER</h1>
+          <p>With Us</p>
+          <article class="left__description">
+            <p id="description">Fill in the form to join our team</p>
+          </article>
+        </header>
+
+        <form id="survey-form">
+          <section class="left__form">
+            <div>
+              <label id="name-label">Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Your name..."
+                class="rounded"
+                required
+              />
+            </div>
+          </section>
+
+          <section class="left__form">
+            <div>
+              <label id="email-label">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your the best email..."
+                required
+              />
+            </div>
+          </section>
+
+          <section class="left__form">
+            <div>
+              <label id="number-label">Age</label>
+              <input
+                type="number"
+                id="number"
+                min="18"
+                max="99"
+                placeholder="Your age..."
+              />
+            </div>
+          </section>
+
+          <section class="left__form">
+            <div>
+              <label>Stack</label>
+              <select class="left__form--options" id="dropdown">
+                <option>You are a dev...</option>
+                <option>Front-end</option>
+                <option>Back-end</option>
+                <option>Fullstack</option>
+              </select>
+            </div>
+          </section>
+
+          <section id="group-radio">
+            <label id="rd" class="left__topics">Your best time</label>
+            <p class="left__interview-text">For a interview</p>
+            <div class="left__radios-checks">
+              <div>
+                <input type="radio" name="rd" value="Definitely" />
+                <label>Morning</label>
+              </div>
+              <div>
+                <input type="radio" name="rd" value="Definitely" /><label
+                  >Afternoon</label
+                >
+              </div>
+              <div>
+                <input type="radio" name="rd" value="Definitely" /><label
+                  >Evening</label
+                >
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <label class="left__topics">Your best Framework</label>
+            <section>
+              <div class="left__radios-checks">
+                <div>
+                  <input type="checkbox" value="option1" />
+                  <label>Angular</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="option2" />
+                  <label>React</label>
+                </div>
+                <div>
+                  <input type="checkbox" value="option3" />
+                  <label>Vue</label>
+                </div>
+              </div>
+            </section>
+          </section>
+
+          <section class="left__tell-us">
+            <label for="story" class="left__topics">Tell us your story:</label>
+            <textarea id="story" name="story"> </textarea>
+
+            <div class="submit">
+              <button id="submit" type="submit">Submit</button>
+            </div>
+          </section>
+        </form>
+      </section>
+
+      <section class="right">
+        <section id="right__opinion">
+          <p class="right__text">
+            "With all my experience, I have never seen such a humane company"
+          </p>
+          <div class="right__info">
+            <div>
+            <h3>ANDI LANE</h3>
+            <p>Front-end developer</p>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

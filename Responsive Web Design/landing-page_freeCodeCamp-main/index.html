@@ -1,0 +1,94 @@
+<!DOCTYh2E html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta htth2-equiv="X-UA-Comh2atible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewh2ort" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/global.css" rel="stylesheet" tyh2e="text/css" />
+    <link href="./assets/styles.css" rel="stylesheet" tyh2e="text/css" />
+
+    <title>Product Landing Page</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="left">
+        <div class="left__container">
+          <header class="menu">
+            <nav class="menu__nav">
+              <h2 class="g-font-title g-fs-2 g-mt">ArtDo</h2>
+              <ul class="menu__links g-mt">
+                <li><a class="g-wb-1" href="#about ">About</a></li>
+                <li><a class="g-wb-1" href="#options">Options</a></li>
+              </ul>
+            </nav>
+          </header>
+          <article id="about" class="overview">
+            <div class="overview__title">
+              <h1 class="g-font-title g-fs-1">
+                Buy The <u class="g-font-title g-fs-1">PRETTY</u>
+              </h1>
+              <h1 class="g-font-title g-fs-1">
+                And Better <u class="g-font-title g-fs-1">NFT</u>
+              </h1>
+            </div>
+            <p class="overview__description g-mt">
+              The pretty NFT could be yours for a <u>little</u> price !
+            </p>
+            <div class="overview__button-container">
+              <div class="btn-1 overview__button">Buy</div>
+            </div>
+            <div class="options">
+              <h1 class="g-font-title g-fs-2 g-mt">Options</h1>
+
+              <div class="options__container-figures g-mt">
+                <figure
+                  onclick="changeNft(1)"
+                  class="options__figure-1"
+                ></figure>
+                <figure
+                  onclick="changeNft(2)"
+                  class="options__figure-2"
+                ></figure>
+                <figure
+                  onclick="changeNft(3)"
+                  class="options__figure-3"
+                ></figure>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="right" class="right right--option-1">
+        <section class="buy">
+          <div class="buy__container">
+            <div class="buy__card">
+              <header class="buy__header">
+                <img src="./assets/images/avatar.jpg" />
+                <article>
+                  <i>Name:</i>
+                  <h2>Classical Roman</h2>
+                  <p>
+                    <i>Artist</i>:
+                    <a href="https://github.com/dev-araujo" target="_blank"
+                      ><u>GitHub</u></a
+                    >
+                  </p>
+                </article>
+              </header>
+              <article class="buy__price">
+                <i>Price</i>
+                <h1 class="g-fs-2">6.00 ETH</h1>
+              </article>
+              <div class="btn-1 overview__button btn--desktop">Buy</div>
+              <div class="btn-1 overview__button btn--mobile">Know More</div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

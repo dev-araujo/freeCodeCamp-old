@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --color-white: #ffffff;
+  --color-light-background: #fafafa;
+  --color-selection: #409063;
+  --color-selection-hover: #64c58e;
+  --color-text: #0d110f;
+
+
+  --color-option-1:rgba(97, 97, 202, 0.938);
+  --color-option-2:rgba(224, 163, 50, 0.829);
+ 
+
+  --color-scrollbar-thumb: #e6d7cd86;
+
+  /* font styles*/
+  --font-title: "EB Garamond", serif;
+  --font-text: "Montserrat", sans-serif;
+}
+
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: var(--font-text);
+  color: var(--color-text);
+
+  list-style: none;
+}
+
+u {
+  border-bottom: 3px solid var(--color-selection);
+}
+i{
+  font-size:1rem;
+}
+a {
+  color: var(--color-text);
+  cursor: pointer;
+}
+a:hover {
+  color: var(--color-selection);
+}
+li {
+  width: 5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+li:hover {
+  margin-top: 3px;
+  border-bottom: 3px solid var(--color-selection);
+}
+
+p {
+  letter-spacing: 1px;
+}
+
+::selection {
+  background: var(--color-selection);
+  color: var(--color-white);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-light-background);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background: var(--color-light-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+}
+
+/* global classes */
+
+.btn-1 {
+  background: var(--color-selection);
+  width: 6rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-1:hover {
+  background-color: var(--color-selection-hover);
+}
+
+.g-fs-1 {
+  font-size: 4rem;
+}
+.g-fs-2 {
+  font-size: 2.1rem;
+}
+.g-fs-3 {
+  font-size: 1.3rem;
+}
+
+.g-font-title {
+  font-family: var(--font-title);
+}
+
+.g-mt {
+  margin-top: 3rem;
+}
+.g-mb {
+  margin-bottom: 2rem;
+}
+
+.g-wb-1 {
+  font-weight: 500;
+}
+.g-wb-2 {
+  font-weight: 600;
+}

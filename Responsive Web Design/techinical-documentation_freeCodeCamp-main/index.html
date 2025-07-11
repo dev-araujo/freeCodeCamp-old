@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./assets/styles.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,600;0,700;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Documentation</title>
+  </head>
+
+  <body>
+    <main class="doc">
+      <section class="doc__hamburger">
+        <i onclick="openMenu()" class="bi bi-list"></i>
+      </section>
+
+      <nav id="doc-nav" class="doc__nav">
+        <section class="menu--mobile">
+          <header class="menu__header">
+            <i onclick="closeMenu()" class="bi bi-x-circle menu__close"></i>
+          </header>
+
+          <h1 class="g-font-large g-font-title">
+            Flexbox <i class="g-font-special g-size-big">doc.</i>
+          </h1>
+
+          <ul class="menu__sections--mobile">
+            <li><a href="#overview" onclick="closeMenu()">Overview</a></li>
+            <li><a href="#display" onclick="closeMenu()">Display</a></li>
+            <li>
+              <a href="#flex-direction" onclick="closeMenu()">Flex-direction</a>
+            </li>
+            <li><a href="#flex-wrap" onclick="closeMenu()">Flex-wrap</a></li>
+            <li><a href="#flex-flow" onclick="closeMenu()">Flex-flow</a></li>
+            <li>
+              <a href="#align-items" onclick="closeMenu()">Align-items</a>
+            </li>
+            <li>
+              <a href="#align-content" onclick="closeMenu()">Align-content</a>
+            </li>
+          </ul>
+        </section>
+      </nav>
+
+      <nav class="doc__nav">
+        <section class="menu">
+          <h1 class="g-font-large g-font-title">
+            Flexbox <i class="g-font-special g-size-big">doc.</i>
+          </h1>
+          <ul class="menu__sections">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#display">Display</a></li>
+            <li><a href="#flex-direction">Flex-direction</a></li>
+            <li><a href="#flex-wrap">Flex-wrap</a></li>
+            <li><a href="#flex-flow">Flex-flow</a></li>
+            <li><a href="#align-items">Align-items</a></li>
+            <li><a href="#align-content">Align-content</a></li>
+          </ul>
+        </section>
+      </nav>
+
+      <section class="doc__content-container">
+        <section class="content">
+          <h1 class="g-font-large g-font-title">
+            Flexbox <i class="g-font-special g-size-big">doc.</i>
+          </h1>
+
+          <article id="overview" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">Overview</h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+            <p class="g-margin-top"><i>See other content below</i></p>
+          </article>
+
+          <section class="content__box-container">
+            <div class="content__box">
+              <h1 class="g-font-title g-size-big">Grid</h1>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+                target="_blank"
+                ><i>Click to know more about <b>Grid</b> </i></a
+              >
+            </div>
+            <div class="content__box">
+              <h1 class="g-font-title g-size-big">Position</h1>
+
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+                target="_blank"
+                ><i>Click to know more about <b>Position</b></i></a
+              >
+            </div>
+            <div class="content__box">
+              <h1 class="g-font-title g-size-big">Box model</h1>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+                target="_blank"
+                ><i>Click to know more about <b>Box</b> model</i></a
+              >
+            </div>
+          </section>
+
+          <article id="display" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">Display</h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+
+          <article id="flex-direction" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">
+              Flex-direction
+            </h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+          <article id="flex-wrap" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">Flex-wrap</h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+
+          <article id="flex-flow" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">Flex-flow</h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+
+          <article id="align-items" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">Align-items</h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+
+          <article id="align-content" class="content__overview g-margin-top">
+            <h1 class="g-size-big g-font-title g-margin-bottom">
+              Align-content
+            </h1>
+            <p>
+              The Flexbox Layout (Flexible Box) module (a W3C Candidate
+              Recommendation as of October 2017) aims at providing a more
+              efficient way to lay out, align and distribute space among items
+              in a container, even when their size is unknown and/or dynamic
+              (thus the word “flex”).
+            </p>
+          </article>
+
+          <footer class="doc__content-footer g-margin-top">
+            <a
+              href="https://github.com/dev-araujo"
+              target="_blank"
+              class="g-font-title"
+              >Made with <i class="bi bi-balloon-heart"></i> by Adriano P.
+              Araujo</a
+            >
+          </footer>
+        </section>
+      </section>
+    </main>
+
+    <script src="./assets/main.js"></script>
+  </body>
+</html>

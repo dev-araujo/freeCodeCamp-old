@@ -1,0 +1,259 @@
+:root {
+  /* colors */
+  --color-white: white;
+  --color-primary: rgb(51, 63, 92);
+  --color-primary-light: rgba(92, 101, 110, 0.329);
+  --color-secondary: rgb(79, 220, 197);
+
+  /* font styles*/
+  --font-title: "Montserrat", sans-serif;
+  --font-default: "Roboto", sans-serif;
+  --font-special: "Noto Serif Display", serif;
+
+  --size-title: 2.8rem;
+  --size-emphasis: 1.9rem;
+  --size-text: 1.1rem;
+  --size-subtitle: 14px;
+}
+/* GENERAL */
+* {
+  list-style: none;
+
+  text-decoration: none;
+  color: var(--color-primary);
+  font-family: var(--font-default);
+  margin: 0;
+  padding: 0;
+}
+::selection {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width:420px) {
+  main{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
+input,
+select,
+textarea {
+  width: 16rem;
+  border: 1px solid var(--color-primary-light);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+textarea {
+  height: 4rem;
+}
+textarea::placeholder {
+  padding: 0;
+}
+header,
+section {
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  width: 0.8rem;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+button {
+  background: none;
+  width: 17rem;
+  border: none;
+  background: var(--color-primary);
+  color: var(--color-white);
+  cursor: pointer;
+
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: var(--font-special);
+  margin-top: 0.6rem;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LEFT-SIDE */
+.left {
+  width: 50vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: auto;
+}
+
+@media(max-width:420px) {
+  .left{
+    width:100vw;
+  }
+}
+
+/* header */
+
+.left__header {
+  margin-top: 1.2rem;
+  font-family: var(--font-title);
+  letter-spacing: 2px;
+}
+.left__header h1 {
+  font-size: var(--size-title);
+  letter-spacing: 8px;
+}
+
+/* description */
+.left__description {
+  padding: 1rem 0 1rem 0;
+}
+.left__description p {
+  font-family: var(--font-special);
+  font-size: var(--size-text);
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+/* inputs default */
+.left__form {
+  margin: 0.4rem 0.5rem;
+}
+
+@media(max-width:420px) {
+.left__form {
+  margin: 0.6rem 0.8rem;
+}
+}
+.left__form div {
+  display: flex;
+  flex-direction: column;
+}
+
+/* input select */
+.left__form--options {
+  width: 17rem;
+}
+
+/* input radio & checks */
+.left__topics {
+  margin-top: 0.7rem;
+  font-size: var(--size-subtitle);
+  font-weight: bold;
+  font-family: var(--font-title);
+}
+.left__interview-text {
+  font-family: var(--font-special);
+  font-weight: bold;
+  font-size: var(--size-subtitle);
+}
+
+.left__radios-checks {
+  width: 16rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left__radios-checks input {
+  width: auto;
+  padding: auto;
+  margin: 1rem 0 1rem 0;
+}
+
+@media(max-width:420px) {
+  .left__radios-checks input {
+  
+  margin: 1.5rem 0 1.5rem 0;
+}
+}
+
+/* textarea */
+.left__tell-us {
+  display: flex;
+  justify-content: center;
+
+  margin-left: 0.8rem;
+}
+
+/* RIGHT-SIDE */
+
+.right {
+  width: 50vw;
+  background: url(./assets/working-form.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media(max-width:420px) {
+  .right{
+    display:none;
+  }
+}
+
+#right__opinion {
+  width: 84%;
+  margin-bottom: 2rem;
+  background-color: rgba(51, 63, 92, 0.459);
+  padding: 1rem 1rem 1.2rem 1rem;
+}
+
+.right__text {
+  font-size: var(--size-emphasis);
+  font-family: var(--font-title);
+  font-style: italic;
+}
+.right__text,
+.right__info h3,
+.right__info p {
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+.right__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top:1rem;
+}
+
+.right__info h3{
+  font-family: var(--font-title);
+}
+
+.right__info p{
+  margin-left:4px;
+}
+
+.right__info h3,.left__info p{
+  letter-spacing: 4px;
+}

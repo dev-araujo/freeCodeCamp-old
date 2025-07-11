@@ -1,0 +1,243 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+}
+
+@media (max-width: 498px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.left {
+  width: 65%;
+  height: 100%;
+
+  overflow-y: auto;
+}
+@media (max-width: 498px) {
+  .left {
+    display: none;
+  }
+}
+
+.left__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  margin-top: 1rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__nav {
+  width: 70%;
+  border-bottom: 1px solid var(--color-scrollbar-thumb);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__links {
+  width: 14rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.overview {
+  width: 70%;
+  height: 100%;
+  margin-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.overview__description {
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.overview__button-container {
+  width: 55%;
+  margin-top: 3rem;
+  margin-left: 1rem;
+}
+
+@media (max-width: 498px) {
+  .overview__description,
+  .overview__button-container {
+    display: none;
+  }
+}
+
+.options__container-figures {
+  width: 100%;
+
+  display: flex;
+}
+
+.options__figure-2,
+.options__figure-3 {
+  margin-left: 4rem;
+}
+
+.options__figure-1,
+.options__figure-2,
+.options__figure-3 {
+  margin-top: -1rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.options__figure-1 {
+  background: url(./images/nft__image.png),
+    linear-gradient(
+      90deg,
+      var(--color-selection) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.options__figure-2 {
+  background: url(./images/nft__image.png),
+    linear-gradient(
+      180deg,
+      var(--color-option-1) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.options__figure-3 {
+  background: url(./images/nft__image.png),
+    linear-gradient(
+      180deg,
+      var(--color-option-2) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*  */
+
+#right {
+  width: 35%;
+}
+.right--option-1 {
+  background: url(../assets/images/nft__image.png),
+    linear-gradient(
+      90deg,
+      var(--color-selection) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right--option-2 {
+  background: url(./images/nft__image.png),
+    linear-gradient(
+      180deg,
+      var(--color-option-1) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right--option-3 {
+  background: url(./images/nft__image.png),
+    linear-gradient(
+      180deg,
+      var(--color-option-2) 0%,
+      var(--color-selection-hover) 100%
+    );
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 498px) {
+  #right {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.buy__container {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buy__card {
+  width: 22rem;
+  height: 14rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+
+  border-radius: 10px;
+  border: solid 1px var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy__card i,
+.buy__card p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.buy__header {
+  width: 20rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buy__header img {
+  width: 3rem;
+  border-radius: 100%;
+}
+
+.buy__price h1 {
+  color: var(--color-white);
+  background-color: var(--color-text);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.btn--mobile {
+  display: none;
+}
+
+@media (max-width: 498px) {
+  .btn--mobile {
+    display: inherit;
+  }
+  .btn--desktop {
+    display: none;
+  }
+}
